@@ -1,0 +1,60 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "type": "ros",
+      "request": "launch",
+      "command": "roslaunch",
+      "name": "launch.py",
+      "package": "examples_rclcpp_minimal_publisher",
+      "target": "${workspaceFolder}/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/launch/test.py",
+      "debugSettings": "debugSettings"
+    },
+    // {
+    //   "name": "Python: Current File",
+    //   "type": "python",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/launch/test.py",
+    //   "console": "integratedTerminal",
+    // },
+    
+    // //Example gdb launch of a ros executable
+    // {
+      // "name": "node",
+      // "type": "cppdbg",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_not_composable",
+    //   "args": [],
+    //   "preLaunchTask": "build",
+    //   "stopAtEntry": true,
+    //   "cwd": "${workspaceFolder}",
+    //   "externalConsole": false,
+    //   "MIMode": "gdb",
+    //   "setupCommands": [
+    //     {
+    //       "description": "Enable pretty-printing for gdb",
+    //       "text": "-enable-pretty-printing",
+    //       "ignoreFailures": true
+    //     }
+    //   ]
+    // }
+  ],
+  "inputs": [
+    {
+      "id": "package",
+      "type": "promptString",
+      "description": "Package name",
+      // "default": "examples_rclcpp_minimal_publisher"
+    },
+    {
+      "id": "program",
+      "type": "promptString",
+      "description": "Program name",
+      // "default": "publisher_member_function"
+    }
+  ]
+}
